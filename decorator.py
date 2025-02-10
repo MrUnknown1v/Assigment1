@@ -1,13 +1,11 @@
-def my_decorator(func):
-    def wrapper(*args):
-        print("Before calling the function")
-        result = func(*args)
-        print("After calling the function")
-        return result
+def uppercase_decorator(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        return result.upper()
     return wrapper
 
-@my_decorator 
+@uppercase_decorator
 def greet(name):
-    print("Hello," + name + "!")
+    return f"Hello, {name}!"
 
-greet("Alice")
+print(greet("Alice"))
