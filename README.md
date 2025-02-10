@@ -1,22 +1,20 @@
 # Hello  Everyone
-This is my  read me file
+This is my first  README File uploaded to public server
+## This is is my code to create enviroment and export it. 
+To create a conda environment with python version 3.9, use the code below
 
-## This is is my code
-It's not much but it's enough
-<code> def my_decorator(func):
-    def wrapper(*args):
-        print("Before calling the function")
-        result = func(*args)
-        print("After calling the function")
-        return result
-    return wrapper
+<code> conda create --name cs_assign1 python=3.9 </code>
 
-@my_decorator #greet = my_decorator(greet)
-def greet(name):
-    print("Hello," + name + "!")
+To install numpy and matplotlib, use code below
 
-greet("Alice") </code>
+
+<code>pip install numpy
+pip install matplotlib</code>
+
+to export enviroment to a yaml file use code below
+
+<code>conda env export > requirements.yaml</code>
 
 ### This is my dog
-His name is Blu
+His name is Blu and he is 12 years old, he is a chihuahua/weiner dog breed.
 ![blu the dog](dog.jpeg)
